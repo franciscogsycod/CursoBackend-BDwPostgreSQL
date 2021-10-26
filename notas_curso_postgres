@@ -1,0 +1,16 @@
+sudo docker-compose up -d postgres
+sudo docker-compose up -d pgadmin
+
+sudo docker-compose down
+
+sudo docker ps
+
+sudo docker inspect abcdefghi
+
+------
+
+CREATE TABLE task (
+	id serial PRIMARY KEY,
+	title VARCHAR ( 250 ) NOT NULL,
+	completed boolean DEFAULT false
+);
